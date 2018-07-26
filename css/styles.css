@@ -196,7 +196,9 @@
 body {
   margin: 0;
   padding: 25px;
-  height: 100vh; }
+  min-height: 100%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
 
 div {
   -webkit-box-sizing: border-box;
@@ -216,7 +218,7 @@ ul {
 .page {
   float: left;
   width: 82.10323%;
-  height: 85vh;
+  height: 100%;
   background-color: #f9f9f8; }
   .page__img {
     float: left;
@@ -252,7 +254,7 @@ ul {
   .menu__top {
     background-color: #f2f1f1;
     float: left;
-    height: 70vh; }
+    height: 85%; }
   .menu__items {
     float: left;
     width: 220px;
@@ -298,9 +300,8 @@ ul {
     float: left;
     width: 220px;
     margin-left: 50px;
-    margin-top: 50px;
-    height: 10vh;
-    position: both;
+    padding-top: 40px;
+    height: 15%;
     background-color: #f8f7f7; }
 
 .link_pdf {
@@ -321,7 +322,7 @@ ul {
 
 .copyright {
   font-size: 80%;
-  padding: 13px 0; }
+  padding: 0; }
 
 .header__logo {
   float: left;
@@ -360,7 +361,7 @@ ul {
     transform: rotate(45deg); }
 
 .buttons {
-  margin: 50px 0 -50px 50px; }
+  padding: 0 40px; }
 
 .button_online {
   text-decoration: none;

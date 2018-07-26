@@ -15,7 +15,7 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
 	&__top {
 		background-color: #f2f1f1;
 		float:left;
-		height: 70vh;
+		height: 85%;
 
 	}
 
@@ -84,9 +84,8 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
 		float: left;
 		width: $wmenu ;
 		margin-left: 50px;
-		margin-top: 50px;
-		height: 10vh;
-		position: both;
+		padding-top: 40px;
+		height: 15%;
 		background-color: #f8f7f7;
 	}
 }
@@ -115,5 +114,5 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
 
 .copyright {
 	font-size: 80%;
-	padding: 13px 0;
+	padding: 0;
 }
