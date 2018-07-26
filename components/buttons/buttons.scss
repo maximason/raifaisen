@@ -1,0 +1,30 @@
+.buttons {
+	@extend .BUTTONS-F;
+	margin: 50px 0 -50px 50px;
+}
+
+.button_online {
+	text-decoration: none;
+	color: #fff;
+	background-color: #b3aaaf;
+	padding: 11px 16px;
+	font-size: 90%;
+
+	&:hover {
+		background-color: #6d5b66;
+	}
+}
+
+
+.button_dealer {
+	border: 1px solid #b3aaaf;
+	text-decoration: none;
+	color: #000;
+	padding: 10px 11px;
+	font-size: 90%;
+
+	&:hover {
+		background-color: #6d5b66;
+		color: white;
+	}
+}

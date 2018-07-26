@@ -1,0 +1,119 @@
+
+$wfull-page: 1550px;
+$wcontent-page: 1260px;
+$wmenu: $wfull-page - $wcontent-page - 70px;
+
+.menu {
+	background-color: #f9f9f8; 
+	// Modifiers
+	float: left;
+	width: $wmenu +50px;
+
+	// Elemets
+
+	//
+	&__top {
+		background-color: #f2f1f1;
+		float:left;
+		height: 70vh;
+
+	}
+
+	//
+
+	//
+	&__items {
+		float: left;
+  		width: $wmenu;
+  		margin: 45px 0 85px 50px;
+  		height:51vh;
+  		display: table;
+	}
+	//
+	&__item {
+		display: table-row;
+  		width: 100%;
+  		
+  		border: 1px solid black;
+  		box-sizing: border-box;
+		a {
+			text-decoration: none;
+			text-align: left;
+			@extend .MENU-ITEMS;
+			color: #4c3440;
+			width: 80%;
+    		display: table-cell;
+    		vertical-align: middle;
+
+    		&:hover {
+    			color: rgba(76,52,64,0.6);
+    		}
+		}
+	}
+
+
+	&__item_delimeter {
+	 	overflow: hidden;
+
+  		text-align: left;
+  		&:before,
+  		&:after {
+  			content: '';
+  			display: inline-block;
+  			vertical-align: middle;
+  			box-sizing: border-box;
+  			width: 25%;
+  			height: 1px;
+  			background: rgba(76,52,64,0.2);
+  		}
+  		&:before {
+  			margin-left: 0%;
+  		}
+  		&:after {
+  			margin-right: -100%;
+  		}
+	}
+	&__item_active {
+		a {
+			@extend .MENU-ACTIVE-ITEM;
+			color: rgba(76,52,64,0.4);
+		}
+	border-bottom: 5px solid rgba(76,52,64,0.5);
+	}	
+	&__bottom {
+		float: left;
+		width: $wmenu ;
+		margin-left: 50px;
+		margin-top: 50px;
+		height: 10vh;
+		position: both;
+		background-color: #f8f7f7;
+	}
+}
+
+
+
+.link_pdf {
+	position: absolute;
+	margin-left: -50px;
+	width: 40px;
+	height: 32px;
+}
+
+.link {
+	@extend .DOWNLOAD-PDF;
+	font-size: 90%;
+	color: #000;
+	text-decoration-style: dashed;
+	margin-left: 50px;
+	padding-bottom: 5px;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+.copyright {
+	font-size: 80%;
+	padding: 13px 0;
+}

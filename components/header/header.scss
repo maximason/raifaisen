@@ -1,0 +1,53 @@
+
+$wcontent-page: 1260px;
+$wfull-page: 1550px;
+
+.header:after {
+	@extend .clearfix;
+}
+
+
+.header__logo {
+	float: left;
+	width: 245px*100%/$wcontent-page;
+	padding: 51px*100%/$wcontent-page;
+}
+
+.header__info-block {
+	float: right;
+	padding-top: 50px*100%/$wcontent-page;
+}
+
+.phone {
+	@extend .NUMBER ;
+	float: left;
+	margin-right: 31px;
+}
+
+.language-selector {
+
+	@extend .RU ;
+	display: block;
+	
+	height: 38px;
+	text-transform: uppercase;
+	float: left;
+	margin-top: -4px;
+	padding: 8px 14px 8px 32px;
+	margin-right: 5px;
+	border-left: 2px solid #dcd9da;
+	border-left: 1px solid #c7c0c3;
+
+	&:after{
+		content: "";
+		display: inline-block;
+		width: 6px;
+		height: 6px;
+		margin: 0 10px;
+		margin-bottom: 3px;
+		border-right:2px solid #dcd9da;
+		border-bottom: 2px solid #dcd9da;
+		transform: rotate(45deg);
+	}
+
+}

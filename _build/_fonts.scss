@@ -1,0 +1,173 @@
+
+/**
+ * заголовок контента
+ */
+.CONTENT-TITLE {
+  font-family: $FuturaNewLight-Reg;
+  @include MOBILE() {
+    font-size: 36pt;
+    line-height: 36px;
+  }
+  @include TABLET_768() {
+    font-size: 36pt;
+    line-height: 40.5pt;
+  }
+  @include DESKTOP_1600() {
+    font-size: 38.1pt;
+    line-height: 61pt;
+  }
+}
+/**
+ * текст контента
+ */
+.CONTENT-TEXT {
+  font-family: $FuturaNewBook-Reg;
+  @include MOBILE() {
+    font-size: 14pt;
+    line-height: 20.25pt;
+  }
+  @include TABLET_768() {
+    font-size: 14pt;
+    line-height: 20.25pt;
+  }
+  @include DESKTOP_1600() {
+    font-size: 14pt;
+    line-height: 20.55pt;
+  }
+}
+/**
+ * номер
+ */
+.NUMBER {
+  font-family: $FuturaNewLight-Reg;
+  @include MOBILE() {
+    font-size: 24pt;
+    line-height: 20.25pt;
+  }
+  @include TABLET_768() {
+    font-size: 24pt;
+    line-height: 20.25pt;
+  }
+  @include DESKTOP_1600() {
+    font-size: 24pt;
+    line-height: 27pt;
+  }
+}
+/**
+ * элементы меню
+ */
+.MENU-ITEMS {
+  font-family: $FuturaNewBook-Reg;
+  @include MOBILE() {
+    font-size: 15.75pt;
+    line-height: 18pt;
+  }
+  @include TABLET_768() {
+    font-size: 15.75pt;
+    line-height: 18pt;
+  }
+  @include DESKTOP_1600() {
+    font-size: 16pt;
+    line-height: 20pt;
+  }
+}
+/**
+ * активные элементы меню
+ */
+.MENU-ACTIVE-ITEM {
+  font-family: $FuturaNewDemi-Reg;
+  @include MOBILE() {
+    font-size: 15.75pt;
+    line-height: 18pt;
+  }
+  @include TABLET_768() {
+    font-size: 15.75pt;
+    line-height: 18pt;
+  }
+  @include DESKTOP_1600() {
+    font-size: 16pt;
+    line-height: 19pt;
+  }
+}
+/**
+ * Кнопки
+ */
+.BUTTONS-F {
+  font-family: $FuturaNewLight-Reg;
+  @include MOBILE() {
+    font-size: 10.5pt;
+    line-height: 13.5pt;
+  }
+  @include TABLET_768() {
+    font-size: 10.5pt;
+    line-height: 13.5pt;
+  }
+  @include DESKTOP_1600() {
+    font-size: 11.5pt;
+    line-height: 18pt;
+  }
+}
+/**
+ * Текст скачать пдф
+ */
+.DOWNLOAD-PDF {
+  font-family: $FuturaNewLight-Reg;
+  @include MOBILE() {
+    font-size: 10.5pt;
+    line-height: 20.25pt;
+  }
+  @include TABLET_768() {
+    font-size: 10.5pt;
+    line-height: 20.25pt;
+  }
+  @include DESKTOP_1600() {
+    font-size: 14pt;
+    line-height: 27pt;
+  }
+}
+/**
+ * ru
+ */
+.RU {
+  font-family: $FuturaNewBook-Reg;
+  @include MOBILE() {
+    font-size: 12pt;
+    line-height: 13.5pt;
+  }
+  @include TABLET_768() {
+    font-size: 12pt;
+    line-height: 13.5pt;
+  }
+  @include DESKTOP_1600() {
+    font-size: 11pt;
+    line-height: 18pt;
+  }
+}
+/**
+ * Копирайт
+ */
+.COPYRIGHT {
+  font-family: $FuturaNewLight-Reg;
+  @include MOBILE() {
+    font-size: 9pt;
+    line-height: 20.25pt;
+  }
+  @include TABLET_768() {
+    font-size: 9pt;
+    line-height: 20.25pt;
+  }
+  @include DESKTOP_1600() {
+    font-size: 12pt;
+    line-height: 27pt;
+  }
+}
+/**
+ * написание Меню
+ */
+.MENU {
+  font-family: $FuturaNewBook-Reg;
+  @include TABLET_768() {
+    font-size: 12pt;
+    line-height: 13.5pt;
+  }
+}

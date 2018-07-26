@@ -1,0 +1,39 @@
+mixin menu( active_id )
+  
+  -
+    var item_names = [
+      { id: "save", name: "Сохранить и преумножить", type:"" , link:"#"},
+      { id: "recieve", name: "Получить финансирование", type:"" , link:"#"},
+      { id: "solutions", name: "Решения для вашего бизнеса", type:"" , link:"#"},
+      { id: "cachier", name: "Расчетно-кассовое обслуживание", type:"" , link:"#"},
+      { id: "consalting", name: "Решения для вашей семьи/Консалтинг", type:"" , link:"#"},
+      { id: "", name: "", type:"delimeter" , link:""},
+      { id: "about", name: "О нас", type:"" , link:"#"},
+      { id: "contacts", name: "Контактная информация", type:"", link:"#" }
+    ] ;
+
+
+
+  .menu
+
+    .menu__top
+  
+      .menu__items
+        for menu_item in item_names
+          .menu__item( class= (menu_item.type == "delimeter" ? "menu__item_delimeter" : "") )( class= (menu_item.id == active_id ? "menu__item_active" : "") )
+            a(href= menu_item.link )= menu_item.name
+        
+
+
+      .buttons
+        a.button.button_online(href="#") Raiffeisen-Online
+        a.button.button_dealer(href="#") R-Dealer
+
+    .menu__bottom   
+
+      a.link(href="#"). 
+        <img class="link_pdf" src="img/iconpdf.png"><img/> 
+        Скачать &#xab;Услуги FWR&#xbb;
+      .copyright &copy;2009-2017 АО &#xab;Райфайзенбанк&#xbb;
+
+    block

@@ -1,0 +1,69 @@
+
+$wcontent-page: 1260px;
+$wfull-page: 1550px;
+$hcontent-page: 850px;
+$wpage-img : 410px;
+$hpage-img : 480px;
+$text-block: $wcontent-page - $wpage-img;
+$size-text: ($text-block - 195px)/2;
+
+.page{
+	float: left;
+	width: ($wcontent-page*101%/$wfull-page);
+	height: 85vh;
+	background-color: #f9f9f8; 
+
+
+	//
+	&__img {
+		float:left;
+		background: url(../img/firs-bg.png);
+		background-repeat: no-repeat;
+		background-position: -10px;
+		background-size: contain;
+		
+		width: $wpage-img * 100% / $wcontent-page;
+		height: $hpage-img * 100% / $hcontent-page;
+		// margin-left: -11px;
+		
+		margin-top: -23px;
+		margin-right: 11px;
+		overflow:hidden;
+	}
+
+	//
+	&__title {
+		@extend .CONTENT-TITLE;
+		margin-top: 1px*100%/$hcontent-page;
+		margin-bottom: 19px*100%/$hcontent-page;
+
+	}
+	
+	//
+	&__text {
+		@extend .CONTENT-TEXT;
+		margin-top: 5px;
+	}
+
+	//
+	&__text_left {
+		float: left;
+		width: $size-text*100%/$wcontent-page;
+		margin-left: 7px;
+	}
+
+	//
+	&__text_right {
+		float: left;
+		margin-left: 40px;
+		width: $size-text*100%/$wcontent-page;
+	}
+
+	&__text_link {
+		color: #6d5b66;
+	}
+
+}
+
+
+
