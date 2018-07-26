@@ -253,13 +253,11 @@ div {
   width: 270px; }
   .menu__top {
     background-color: #f2f1f1;
-    float: left;
-    height: 85%; }
+    float: left; }
   .menu__items {
     float: left;
     width: 220px;
     margin: 45px 0 85px 50px;
-    height: 51vh;
     display: table; }
   .menu__item {
     display: table-row;
@@ -273,7 +271,8 @@ div {
       color: #4c3440;
       width: 80%;
       display: table-cell;
-      vertical-align: middle; }
+      vertical-align: middle;
+      padding-top: 3vh; }
       .menu__item a:hover {
         color: rgba(76, 52, 64, 0.6); }
   .menu__item_delimeter {

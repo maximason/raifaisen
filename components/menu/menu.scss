@@ -15,7 +15,7 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
 	&__top {
 		background-color: #f2f1f1;
 		float:left;
-		height: 85%;
+		//height: 85%;
 
 	}
 
@@ -26,7 +26,6 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
 		float: left;
   		width: $wmenu;
   		margin: 45px 0 85px 50px;
-  		height:51vh;
   		display: table;
 	}
 	//
@@ -44,6 +43,7 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
 			width: 80%;
     		display: table-cell;
     		vertical-align: middle;
+    		padding-top: 3vh;
 
     		&:hover {
     			color: rgba(76,52,64,0.6);
