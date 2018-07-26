@@ -210,11 +210,6 @@ div {
   width: 100%;
   clear: both; }
 
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-
 .page {
   float: left;
   width: 82.10323%;
@@ -246,6 +241,11 @@ ul {
     width: 25.99206%; }
   .page__text_link {
     color: #6d5b66; }
+    .page__text_link:after {
+      content: '\2192';
+      display: inline-block;
+      margin-left: 5px;
+      text-decoration: none; }
 
 .menu {
   background-color: #f9f9f8;

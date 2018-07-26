@@ -61,6 +61,13 @@ $size-text: ($text-block - 195px)/2;
 
 	&__text_link {
 		color: #6d5b66;
+
+		&:after {
+			  content: '\2192';
+			  display: inline-block;
+			  margin-left: 5px;
+ 			  text-decoration: none;
+		}
 	}
 
 }
