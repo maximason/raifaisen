@@ -77,8 +77,20 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
 		a {
 			@extend .MENU-ACTIVE-ITEM;
 			color: rgba(76,52,64,0.4);
+			position:relative;
+  	  		display: inline;
+  	  		&:after{
+    			content:"";
+    			position:absolute;
+    			left:0;
+    			bottom:0;
+    			width:100%;
+    			height:1px;
+    			border-bottom:10px solid rgba(76,52,64, .17);
+  			}
 		}
-	border-bottom: 5px solid rgba(76,52,64,0.5);
+
+
 	}	
 	&__bottom {
 		float: left;
