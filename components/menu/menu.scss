@@ -4,6 +4,8 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 .menu {
 	background-color: $BG-MENU; 
 	// Modifiers
+	position: relative;
+	height: 100%;
 	float: left;
 	width: $wmenu +50px;
 
@@ -91,9 +93,12 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 
 	}	
 	&__bottom {
+		position: absolute;
+		background-color: $BG-MENU;
+  		bottom: 0;
 		float: left;
-		width: $wmenu ;
-		margin-left: 50px;
+		width: $wmenu +50px ;
+		padding-left: 50px;
 		padding-top: 40px;
 		height: 15%;
 	}

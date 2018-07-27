@@ -1,4 +1,4 @@
-$hcontent-page: 850px;
+$hcontent-page: 700px;
 $wpage-img : 410px;
 $hpage-img : 480px;
 $text-block: $W-CONTENT-PAGE - $wpage-img;
@@ -16,7 +16,7 @@ $size-text: ($text-block - 195px)/2;
 		float:left;
 		background: url($FIRST-BG-IMG);
 		background-repeat: no-repeat;
-		background-position: -10px;
+		background-position: -15% 50%;
 		background-size: contain;
 		
 		width: $wpage-img * 100% / $W-CONTENT-PAGE;

@@ -1,6 +1,8 @@
 .buttons {
 	@extend .BUTTONS-F;
-	padding: 0 40px;
+	padding: 5vh 40px;
+	position: sticky;
+
 }
 
 .button_online {

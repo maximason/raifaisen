@@ -219,16 +219,16 @@ div {
     float: left;
     background: url("../img/firs-bg.png");
     background-repeat: no-repeat;
-    background-position: -10px;
+    background-position: -15% 50%;
     background-size: contain;
     width: 32.53968%;
-    height: 56.47059%;
+    height: 68.57143%;
     margin-top: -23px;
     margin-right: 11px;
     overflow: hidden; }
   .page__title {
-    margin-top: 0.11765%;
-    margin-bottom: 2.23529%; }
+    margin-top: 0.14286%;
+    margin-bottom: 2.71429%; }
   .page__text {
     margin-top: 5px; }
   .page__text_left {
@@ -249,6 +249,8 @@ div {
 
 .menu {
   background-color: #f9f9f8;
+  position: relative;
+  height: 100%;
   float: left;
   width: 270px; }
   .menu__top {
@@ -304,9 +306,12 @@ div {
       height: 1px;
       border-bottom: 10px solid rgba(76, 52, 64, 0.17); }
   .menu__bottom {
+    position: absolute;
+    background-color: #f9f9f8;
+    bottom: 0;
     float: left;
-    width: 220px;
-    margin-left: 50px;
+    width: 270px;
+    padding-left: 50px;
     padding-top: 40px;
     height: 15%; }
 
@@ -369,7 +374,9 @@ div {
     transform: rotate(45deg); }
 
 .buttons {
-  padding: 0 40px; }
+  padding: 5vh 40px;
+  position: -webkit-sticky;
+  position: sticky; }
 
 .button_online {
   text-decoration: none;
