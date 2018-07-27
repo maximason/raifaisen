@@ -48,11 +48,7 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
     		&:hover {
     			color: rgba($TEXT-COLOR,0.6);
     		}
-		}
-		&:nth-child(7) {
-			a{
-				padding-top: 0;
-			}
+		
 		}
 	}
 
@@ -60,7 +56,7 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 	&__item_delimeter {
 		width: 0;
 		&:before {
-			border-bottom:1px solid rgba($TEXT-COLOR,.2);
+			border-bottom:1px solid rgba($TEXT-COLOR,.3);
 			display: block;
 			content: '';
 			width: 60px;
