@@ -15,6 +15,7 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 	&__top {
 		background-color: $BG-TOP-MENU;
 		float:left;
+		//overflow: visible;
 		//height: 85%;
 
 	}
@@ -90,15 +91,14 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 
 	}	
 	&__bottom {
-		position: relative;
+		position: fixed;
 		background-color: $BG-MENU;
-  		bottom: 0px;
+  		bottom: 25px;
 		float: left;
 		width: $wmenu +55px ;
 		padding-left: 50px;
 		padding-top: 40px;
 		height: 15%;
-		z-index: 10;
 	}
 }
 

@@ -303,15 +303,14 @@ div {
       height: 1px;
       border-bottom: 10px solid rgba(76, 52, 64, 0.17); }
   .menu__bottom {
-    position: relative;
+    position: fixed;
     background-color: #f9f9f8;
-    bottom: 0px;
+    bottom: 25px;
     float: left;
     width: 275px;
     padding-left: 50px;
     padding-top: 40px;
-    height: 15%;
-    z-index: 10; }
+    height: 15%; }
 
 .link_pdf {
   position: absolute;
@@ -385,8 +384,7 @@ div {
       transition: 0.5s; }
 
 .buttons {
-  padding: 10vh 0px 50px 0px;
-  vertical-align: bottom; }
+  padding: 10vh 0px 50px 0px; }
 
 .button_online {
   text-decoration: none;
