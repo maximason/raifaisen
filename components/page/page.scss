@@ -4,6 +4,19 @@ $hpage-img : 480px;
 $text-block: $W-CONTENT-PAGE - $wpage-img;
 $size-text: ($text-block - 195px)/2;
 
+@mixin vertical-center ($h:100%){
+	// text-align: center;
+ 
+	&:before {
+	  content: '';
+	  display: inline-block;
+	  height: $h;
+	  vertical-align: middle;
+	  width: 0;
+	  margin-right: -.35em;
+	}  
+}
+
 .page{
 	float: left;
 	width: ($W-CONTENT-PAGE*101%/$W-FULL-PAGE);
@@ -16,7 +29,7 @@ $size-text: ($text-block - 195px)/2;
 		float:left;
 		background: url($FIRST-BG-IMG);
 		background-repeat: no-repeat;
-		background-position: -20% 50%;
+		background-position: -15px;
 		background-size: contain;
 		
 		width: $wpage-img * 100% / $W-CONTENT-PAGE;
@@ -36,14 +49,19 @@ $size-text: ($text-block - 195px)/2;
 
 	}
 	
+	&__content {
+		
+	}
 	//
 	&__text {
 		@extend .CONTENT-TEXT;
 		margin-top: 5px;
+
 	}
 
 	//
 	&__text_left {
+		
 		float: left;
 		width: $size-text*100%/$W-CONTENT-PAGE;
 		margin-left: 7px;

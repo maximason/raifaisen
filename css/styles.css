@@ -219,7 +219,7 @@ div {
     float: left;
     background: url("../img/firs-bg.png");
     background-repeat: no-repeat;
-    background-position: -20% 50%;
+    background-position: -15px;
     background-size: contain;
     width: 32.53968%;
     height: 68.57143%;
@@ -252,14 +252,14 @@ div {
   position: relative;
   height: 100%;
   float: left;
-  width: 270px; }
+  width: 274px; }
   .menu__top {
     background-color: #f2f1f1;
     float: left; }
   .menu__items {
     float: left;
-    width: 220px;
-    margin: 45px 0 0px 50px;
+    width: 230px;
+    margin: 45px 0 0px 45px;
     display: table; }
   .menu__item {
     display: table-row;
@@ -276,7 +276,12 @@ div {
       vertical-align: middle;
       padding-top: 3vh; }
       .menu__item a:hover {
-        color: rgba(76, 52, 64, 0.6); }
+        color: rgba(76, 52, 64, 0.6);
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
+    .menu__item:nth-child(7) a {
+      padding-top: 4.5vh; }
   .menu__item_delimeter {
     width: 0; }
     .menu__item_delimeter:before {
@@ -298,14 +303,15 @@ div {
       height: 1px;
       border-bottom: 10px solid rgba(76, 52, 64, 0.17); }
   .menu__bottom {
-    position: absolute;
+    position: relative;
     background-color: #f9f9f8;
-    bottom: 0;
+    bottom: 0px;
     float: left;
-    width: 270px;
+    width: 275px;
     padding-left: 50px;
     padding-top: 40px;
-    height: 15%; }
+    height: 15%;
+    z-index: 10; }
 
 .link_pdf {
   position: absolute;
@@ -323,7 +329,10 @@ div {
   margin-left: 50px;
   padding-bottom: 5px; }
   .link:hover {
-    text-decoration: none; }
+    text-decoration: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
 
 .copyright {
   font-size: 80%;
@@ -364,28 +373,42 @@ div {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
+  .language-selector:hover {
+    background-color: #fff; }
+    .language-selector:hover:after {
+      -webkit-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+      transform: rotate(225deg);
+      margin-bottom: 0px;
+      -webkit-transition: 0.5s;
+      -o-transition: 0.5s;
+      transition: 0.5s; }
 
 .buttons {
-  padding: 10vh 0px 5vh 0px;
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0px; }
+  padding: 10vh 0px 50px 0px;
+  vertical-align: bottom; }
 
 .button_online {
   text-decoration: none;
   color: #fff;
   background-color: #b3aaaf;
-  padding: 10px 15px;
+  padding: 11px 16px;
   font-size: 90%; }
   .button_online:hover {
-    background-color: #6d5b66; }
+    background-color: #6d5b66;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }
 
 .button_dealer {
   border: 1px solid #b3aaaf;
   text-decoration: none;
   color: #000;
-  padding: 9px 10px;
+  padding: 10px 11px;
   font-size: 90%; }
   .button_dealer:hover {
+    color: white;
     background-color: #6d5b66;
-    color: white; }
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s; }

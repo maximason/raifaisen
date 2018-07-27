@@ -7,7 +7,7 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 	position: relative;
 	height: 100%;
 	float: left;
-	width: $wmenu +50px;
+	width: $wmenu +54px;
 
 	// Elemets
 
@@ -24,8 +24,8 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 	//
 	&__items {
 		float: left;
-  		width: $wmenu;
-  		margin: 45px 0 0px 50px;
+  		width: $wmenu 	+10px;
+  		margin: 45px 0 0px 45px;
   		display: table;
 	}
 	//
@@ -47,8 +47,14 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 
     		&:hover {
     			color: rgba($TEXT-COLOR,0.6);
+    			transition: 0.5s;
     		}
 		
+		}
+		&:nth-child(7) {
+			a {
+				padding-top: 4.5vh;
+			}
 		}
 	}
 
@@ -84,14 +90,15 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 
 	}	
 	&__bottom {
-		position: absolute;
+		position: relative;
 		background-color: $BG-MENU;
-  		bottom: 0;
+  		bottom: 0px;
 		float: left;
-		width: $wmenu +50px ;
+		width: $wmenu +55px ;
 		padding-left: 50px;
 		padding-top: 40px;
 		height: 15%;
+		z-index: 10;
 	}
 }
 
@@ -115,6 +122,7 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 
 	&:hover {
 		text-decoration: none;
+		transition: 0.5s;
 	}
 }
 

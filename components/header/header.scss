@@ -46,5 +46,13 @@
 		border-bottom: 2px solid #dcd9da;
 		transform: rotate(45deg);
 	}
+	&:hover {
+		background-color: #fff;
+		&:after {
+			transform:rotate(225deg);
+			margin-bottom: 0px;
+			transition: 0.5s;
+		}
+	}
 
 }
