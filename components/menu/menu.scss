@@ -1,10 +1,8 @@
 
-$wfull-page: 1550px;
-$wcontent-page: 1260px;
-$wmenu: $wfull-page - $wcontent-page - 70px;
+$wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 
 .menu {
-	background-color: #f9f9f8; 
+	background-color: $BG-MENU; 
 	// Modifiers
 	float: left;
 	width: $wmenu +50px;
@@ -13,7 +11,7 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
 
 	//
 	&__top {
-		background-color: #f2f1f1;
+		background-color: $BG-TOP-MENU;
 		float:left;
 		//height: 85%;
 
@@ -46,7 +44,7 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
     		padding-top: 3vh;
 
     		&:hover {
-    			color: rgba(76,52,64,0.6);
+    			color: rgba($TEXT-COLOR,0.6);
     		}
 		}
 	}
@@ -64,7 +62,7 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
   			box-sizing: border-box;
   			width: 25%;
   			height: 1px;
-  			background: rgba(76,52,64,0.2);
+  			background: rgba($TEXT-COLOR,0.2);
   		}
   		&:before {
   			margin-left: 0%;
@@ -76,7 +74,7 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
 	&__item_active {
 		a {
 			@extend .MENU-ACTIVE-ITEM;
-			color: rgba(76,52,64,0.4);
+			color: rgba($TEXT-COLOR,0.4);
 			position:relative;
   	  		display: inline;
   	  		&:after{
@@ -86,7 +84,7 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
     			bottom:0;
     			width:100%;
     			height:1px;
-    			border-bottom:10px solid rgba(76,52,64, .17);
+    			border-bottom:10px solid rgba($TEXT-COLOR, .17);
   			}
 		}
 
@@ -98,7 +96,6 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
 		margin-left: 50px;
 		padding-top: 40px;
 		height: 15%;
-		background-color: #f8f7f7;
 	}
 }
 
@@ -115,7 +112,8 @@ $wmenu: $wfull-page - $wcontent-page - 70px;
 	@extend .DOWNLOAD-PDF;
 	font-size: 90%;
 	color: #000;
-	text-decoration-style: dashed;
+	text-decoration-style: dotted;
+	text-decoration-color: rgba(0,0,0,.4);
 	margin-left: 50px;
 	padding-bottom: 5px;
 

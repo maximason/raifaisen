@@ -1,28 +1,25 @@
-
-$wcontent-page: 1260px;
-$wfull-page: 1550px;
 $hcontent-page: 850px;
 $wpage-img : 410px;
 $hpage-img : 480px;
-$text-block: $wcontent-page - $wpage-img;
+$text-block: $W-CONTENT-PAGE - $wpage-img;
 $size-text: ($text-block - 195px)/2;
 
 .page{
 	float: left;
-	width: ($wcontent-page*101%/$wfull-page);
+	width: ($W-CONTENT-PAGE*101%/$W-FULL-PAGE);
 	height: 100%;
-	background-color: #f9f9f8; 
+	background-color: $BG-COLOR; 
 
 
 	//
 	&__img {
 		float:left;
-		background: url(../img/firs-bg.png);
+		background: url($FIRST-BG-IMG);
 		background-repeat: no-repeat;
 		background-position: -10px;
 		background-size: contain;
 		
-		width: $wpage-img * 100% / $wcontent-page;
+		width: $wpage-img * 100% / $W-CONTENT-PAGE;
 		height: $hpage-img * 100% / $hcontent-page;
 		// margin-left: -11px;
 		
@@ -48,7 +45,7 @@ $size-text: ($text-block - 195px)/2;
 	//
 	&__text_left {
 		float: left;
-		width: $size-text*100%/$wcontent-page;
+		width: $size-text*100%/$W-CONTENT-PAGE;
 		margin-left: 7px;
 	}
 
@@ -56,11 +53,11 @@ $size-text: ($text-block - 195px)/2;
 	&__text_right {
 		float: left;
 		margin-left: 40px;
-		width: $size-text*100%/$wcontent-page;
+		width: $size-text*100%/$W-CONTENT-PAGE;
 	}
 
 	&__text_link {
-		color: #6d5b66;
+		color: $LINK-COLOR;
 
 		&:after {
 			  content: '\2192';

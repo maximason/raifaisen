@@ -1,7 +1,4 @@
 
-$wcontent-page: 1260px;
-$wfull-page: 1550px;
-
 .header:after {
 	@extend .clearfix;
 }
@@ -9,13 +6,13 @@ $wfull-page: 1550px;
 
 .header__logo {
 	float: left;
-	width: 245px*100%/$wcontent-page;
-	padding: 51px*100%/$wcontent-page;
+	width: 245px*100%/$W-CONTENT-PAGE;
+	padding: 51px*100%/$W-CONTENT-PAGE;
 }
 
 .header__info-block {
 	float: right;
-	padding-top: 50px*100%/$wcontent-page;
+	padding-top: 50px*100%/$W-CONTENT-PAGE;
 }
 
 .phone {

@@ -217,7 +217,7 @@ div {
   background-color: #f9f9f8; }
   .page__img {
     float: left;
-    background: url(../img/firs-bg.png);
+    background: url("../img/firs-bg.png");
     background-repeat: no-repeat;
     background-position: -10px;
     background-size: contain;
@@ -308,8 +308,7 @@ div {
     width: 220px;
     margin-left: 50px;
     padding-top: 40px;
-    height: 15%;
-    background-color: #f8f7f7; }
+    height: 15%; }
 
 .link_pdf {
   position: absolute;
@@ -320,8 +319,10 @@ div {
 .link {
   font-size: 90%;
   color: #000;
-  -webkit-text-decoration-style: dashed;
-  text-decoration-style: dashed;
+  -webkit-text-decoration-style: dotted;
+  text-decoration-style: dotted;
+  -webkit-text-decoration-color: rgba(0, 0, 0, 0.4);
+  text-decoration-color: rgba(0, 0, 0, 0.4);
   margin-left: 50px;
   padding-bottom: 5px; }
   .link:hover {
