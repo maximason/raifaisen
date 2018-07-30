@@ -4,6 +4,13 @@
 }
 
 
+.header {
+	position: absolute;
+	top:0;
+	left: 0; 
+	width: 100% ;
+}
+
 .header__logo {
 	float: left;
 	width: 245px*100%/$W-CONTENT-PAGE;

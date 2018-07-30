@@ -202,7 +202,8 @@ body {
 
 div {
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  position: relative; }
 
 .clearfix, .header:after {
   content: '';
@@ -211,34 +212,49 @@ div {
   clear: both; }
 
 .page {
-  float: left;
-  width: 82.10323%;
-  height: 100%;
-  background-color: #f9f9f8; }
+  width: calc(100% - 270px);
+  background-color: #f9f9f8;
+  text-align: center; }
+  .page:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    width: 0; }
   .page__img {
-    float: left;
     background: url("../img/firs-bg.png");
     background-repeat: no-repeat;
     background-position: -15px;
-    background-size: contain;
-    width: 32.53968%;
-    height: 68.57143%;
-    margin-top: -23px;
-    margin-right: 11px;
-    overflow: hidden; }
+    background-size: auto;
+    width: 410px;
+    height: 480px;
+    position: absolute;
+    top: 25%;
+    left: 0;
+    vertical-align: middle;
+    display: inline-block; }
   .page__title {
     margin-top: 0.14286%;
     margin-bottom: 2.71429%; }
+  .page__content {
+    width: 63.49206%;
+    text-align: left;
+    left: 15%;
+    display: inline-block;
+    vertical-align: middle; }
   .page__text {
     margin-top: 5px; }
   .page__text_left {
-    float: left;
-    width: 25.99206%;
-    margin-left: 7px; }
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 40%; }
   .page__text_right {
-    float: left;
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
     margin-left: 40px;
-    width: 25.99206%; }
+    width: 40%; }
   .page__text_link {
     color: #6d5b66; }
     .page__text_link:after {
@@ -249,17 +265,21 @@ div {
 
 .menu {
   background-color: #f9f9f8;
-  position: relative;
   height: 100%;
-  float: left;
-  width: 274px; }
+  position: absolute;
+  width: 275px;
+  top: 0;
+  right: 0; }
   .menu__top {
     background-color: #f2f1f1;
-    float: left; }
+    position: relative;
+    height: calc(100% - 135px);
+    top: 0px;
+    width: 275px; }
   .menu__items {
-    float: left;
     width: 230px;
-    margin: 45px 0 0px 45px;
+    margin: 0px 0px 0px 45px;
+    padding: 4vh 0 3vh 0;
     display: table; }
   .menu__item {
     display: table-row;
@@ -274,7 +294,7 @@ div {
       width: 80%;
       display: table-cell;
       vertical-align: middle;
-      padding-top: 3vh; }
+      padding-top: 1.6vh; }
       .menu__item a:hover {
         color: rgba(76, 52, 64, 0.6);
         -webkit-transition: 0.5s;
@@ -303,14 +323,14 @@ div {
       height: 1px;
       border-bottom: 10px solid rgba(76, 52, 64, 0.17); }
   .menu__bottom {
-    position: fixed;
+    position: relative;
     background-color: #f9f9f8;
-    bottom: 25px;
+    bottom: 0px;
     float: left;
     width: 275px;
     padding-left: 50px;
     padding-top: 40px;
-    height: 15%; }
+    height: 13.5%; }
 
 .link_pdf {
   position: absolute;
@@ -336,6 +356,12 @@ div {
 .copyright {
   font-size: 80%;
   padding: 0; }
+
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; }
 
 .header__logo {
   float: left;
@@ -384,7 +410,11 @@ div {
       transition: 0.5s; }
 
 .buttons {
-  padding: 10vh 0px 50px 0px; }
+  position: -webkit-sticky;
+  position: sticky;
+  margin: 0 45px;
+  top: 700px;
+  padding-bottom: 20px; }
 
 .button_online {
   text-decoration: none;

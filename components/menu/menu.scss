@@ -4,19 +4,25 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 .menu {
 	background-color: $BG-MENU; 
 	// Modifiers
-	position: relative;
+	//position: relative;
 	height: 100%;
-	float: left;
-	width: $wmenu +54px;
+	position: absolute;
+	width: $wmenu +55px;
+	top: 0;
+	right: 0;
 
 	// Elemets
 
 	//
 	&__top {
 		background-color: $BG-TOP-MENU;
-		float:left;
+		//float:left;
 		//overflow: visible;
 		//height: 85%;
+		position: relative;
+		height: calc(100% - 135px);
+		top:0px;
+		width: $wmenu + 55px;
 
 	}
 
@@ -24,9 +30,10 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 
 	//
 	&__items {
-		float: left;
+		//float: left;
   		width: $wmenu 	+10px;
-  		margin: 45px 0 0px 45px;
+  		margin: 0px 0px 0px 45px;
+  		padding: 4vh 0 3vh 0;
   		display: table;
 	}
 	//
@@ -44,7 +51,7 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 			width: 80%;
     		display: table-cell;
     		vertical-align: middle;
-    		padding-top: 3vh;
+    		padding-top: 1.6vh;
 
     		&:hover {
     			color: rgba($TEXT-COLOR,0.6);
@@ -91,14 +98,14 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 
 	}	
 	&__bottom {
-		position: fixed;
+		position: relative;
 		background-color: $BG-MENU;
-  		bottom: 25px;
+  		bottom: 0px;
 		float: left;
 		width: $wmenu +55px ;
 		padding-left: 50px;
 		padding-top: 40px;
-		height: 15%;
+		height: (135px * 100%) / 1000px;
 	}
 }
 
