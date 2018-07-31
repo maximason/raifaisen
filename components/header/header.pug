@@ -5,5 +5,11 @@ mixin header
 
       .header__info-block
         .phone +7 (495) 662 76 77
-        .language-selector ru
-      block
+        .language-selector-line
+        .language-selector 
+          .language-selector__selected   <a class="language-selector__selected-text" href="#">ru</a> 
+            ul.language-selector__items
+              li.language-selector__item   <a class ="language-selector__item-text" href="#">en</a>
+              li.language-selector__item   <a class ="language-selector__item-text" href="#">de</a>
+
+        block

@@ -10,6 +10,9 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 	width: $wmenu +55px;
 	top: 0;
 	right: 0;
+	@include MOBILE() {
+		display: none;
+	}
 
 	// Elemets
 

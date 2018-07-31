@@ -128,18 +128,18 @@
 /**
  * ru
  */
-.RU, .language-selector {
+.RU, .language-selector__selected-text, .language-selector__item-text {
   font-family: "FuturaNewBook-Reg"; }
   @media screen and (max-width: 767px) {
-    .RU, .language-selector {
+    .RU, .language-selector__selected-text, .language-selector__item-text {
       font-size: 12pt;
       line-height: 13.5pt; } }
   @media screen and (min-width: 768px) and (max-width: 1599px) {
-    .RU, .language-selector {
+    .RU, .language-selector__selected-text, .language-selector__item-text {
       font-size: 12pt;
       line-height: 13.5pt; } }
   @media screen and (min-width: 1600px) {
-    .RU, .language-selector {
+    .RU, .language-selector__selected-text, .language-selector__item-text {
       font-size: 11pt;
       line-height: 18pt; } }
 
@@ -270,6 +270,9 @@ div {
   width: 275px;
   top: 0;
   right: 0; }
+  @media screen and (max-width: 767px) {
+    .menu {
+      display: none; } }
   .menu__top {
     background-color: #f2f1f1;
     position: relative;
@@ -376,17 +379,55 @@ div {
   float: left;
   margin-right: 31px; }
 
-.language-selector {
-  display: block;
+.language-selector-line {
+  display: inline-block;
   height: 38px;
-  text-transform: uppercase;
   float: left;
   margin-top: -4px;
   padding: 8px 14px 8px 32px;
   margin-right: 5px;
   border-left: 2px solid #dcd9da;
-  border-left: 1px solid #c7c0c3; }
-  .language-selector:after {
+  border-left: 1px solid #c7c0c3;
+  /*&:after{
+		content: "";
+		display: inline-block;
+		width: 6px;
+		height: 6px;
+		margin: 0 10px;
+		margin-bottom: 3px;
+		border-right:2px solid #dcd9da;
+		border-bottom: 2px solid #dcd9da;
+		transform: rotate(45deg);
+	}
+	&:hover {
+		background-color: #fff;
+		&:after {
+			transform:rotate(225deg);
+			margin-bottom: 0px;
+			transition: 0.5s;
+		}
+	}*/ }
+
+.language-selector {
+  list-style: none;
+  position: relative;
+  display: inline-block;
+  float: left;
+  margin-left: -30px;
+  padding-right: 20px; }
+
+.language-selector__selected-text {
+  text-decoration: none; }
+
+.language-selector__selected {
+  color: #dcd9da;
+  border-radius: 5px;
+  width: 60px;
+  text-align: center;
+  text-transform: uppercase; }
+  .language-selector__selected:hover {
+    background-color: white; }
+  .language-selector__selected-text:after {
     content: "";
     display: inline-block;
     width: 6px;
@@ -398,16 +439,55 @@ div {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg); }
-  .language-selector:hover {
-    background-color: #fff; }
-    .language-selector:hover:after {
-      -webkit-transform: rotate(225deg);
-      -ms-transform: rotate(225deg);
-      transform: rotate(225deg);
-      margin-bottom: 0px;
-      -webkit-transition: 0.5s;
-      -o-transition: 0.5s;
-      transition: 0.5s; }
+  .language-selector__selected-text:hover {
+    background-color: #fff;
+    color: #dcd9da; }
+    .language-selector__selected-text:hover:hover {
+      background-color: #fff; }
+      .language-selector__selected-text:hover:hover:after {
+        -webkit-transform: rotate(225deg);
+        -ms-transform: rotate(225deg);
+        transform: rotate(225deg);
+        margin-bottom: 0px;
+        -webkit-transition: 0.5s;
+        -o-transition: 0.5s;
+        transition: 0.5s; }
+  .language-selector__selected-text {
+    color: #6d5b66; }
+
+.language-selector__item {
+  list-style: none; }
+
+.language-selector__items {
+  display: none; }
+
+.language-selector__selected:hover .language-selector__items {
+  display: block; }
+
+.language-selector.language-selector__items {
+  position: absolute;
+  border-top: 15px solid transparent; }
+
+.language-selector__item {
+  float: none;
+  margin-top: 10px; }
+
+.language-selector__item-text {
+  height: 25px;
+  margin-left: -55px;
+  text-decoration: none;
+  color: #6d5b66; }
+  .language-selector__item-text:hover {
+    color: #dcd9da; }
+
+.language-selector__item-text {
+  width: auto;
+  display: inline-block;
+  padding: 0px 10px 0 0;
+  text-transform: uppercase; }
+
+.lang__items_text {
+  text-transform: uppercase; }
 
 .buttons {
   position: -webkit-sticky;
