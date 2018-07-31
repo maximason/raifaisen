@@ -13,10 +13,34 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 	@include MOBILE() {
 		width: 100%;
 		.menu {
-
+			position: relative;
+			width: 0;
 			&__top {
+				background-color: inherit;
 				width: 100%;
+				top:10px;
 				//margin: 0;
+			}
+			&__items {
+				width: 90%;
+				margin: 0 auto;
+
+			}
+			&__item {
+				display: block;
+				border:none;
+				a {
+					display: block;
+					padding-top: 4vh;
+				}
+			}
+			&__bottom {
+				bottom: -80px;
+				float:none;
+				width: 0;
+				padding-left: 0;
+				padding-top: 0;
+				height: 0;
 			}
 		}
 	}

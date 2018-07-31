@@ -220,7 +220,8 @@ div {
     width: 0; }
   @media screen and (max-width: 767px) {
     .page {
-      width: 100%; }
+      width: 100%;
+      display: none; }
       .page .page__img {
         width: 100%;
         background-size: 90%;
@@ -300,8 +301,29 @@ div {
   @media screen and (max-width: 767px) {
     .menu {
       width: 100%; }
-      .menu .menu__top {
-        width: 100%; } }
+      .menu .menu {
+        position: relative;
+        width: 0; }
+        .menu .menu__top {
+          background-color: inherit;
+          width: 100%;
+          top: 10px; }
+        .menu .menu__items {
+          width: 90%;
+          margin: 0 auto; }
+        .menu .menu__item {
+          display: block;
+          border: none; }
+          .menu .menu__item a {
+            display: block;
+            padding-top: 4vh; }
+        .menu .menu__bottom {
+          bottom: -80px;
+          float: none;
+          width: 0;
+          padding-left: 0;
+          padding-top: 0;
+          height: 0; } }
   .menu__top {
     background-color: #f2f1f1;
     position: relative;
