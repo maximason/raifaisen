@@ -9,6 +9,38 @@
 	top:0;
 	left: 0; 
 	width: 100% ;
+	@include MOBILE() {
+		.header {
+			&__logo {
+				background-color: rgba(249,249,248,.1);
+				width: 70%;
+			}
+
+			&__info-block {
+				width: 100%;
+				position: fixed;
+				bottom: 0;
+				background-color: #fff;
+			}
+		}
+
+
+		.phone {
+			display: inline-block;
+			margin-right: 0;
+		}
+
+		.language-selector-line {
+			height: 20px;
+			margin: 0;
+			padding: 0;
+			margin-left: 23px;
+			margin-bottom: 15px;
+		}
+		.language-selector {
+			float:right;
+		}
+	}
 }
 
 .header__logo {

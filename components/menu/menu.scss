@@ -11,7 +11,14 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 	top: 0;
 	right: 0;
 	@include MOBILE() {
-		display: none;
+		width: 100%;
+		.menu {
+
+			&__top {
+				width: 100%;
+				//margin: 0;
+			}
+		}
 	}
 
 	// Elemets

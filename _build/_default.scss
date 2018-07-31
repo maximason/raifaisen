@@ -4,6 +4,10 @@ body {
 
 	min-height: 100%;
 	box-sizing: border-box;
+
+	@include MOBILE() {
+		padding: 10px;
+	}
 }
 
 div {

@@ -1,9 +1,9 @@
 @mixin MOBILE() {
-  @media screen and (max-width: $TABLET_768 - 1) { @content; }
+  @media screen and (max-width: $TABLET - 1) { @content; }
 }
-@mixin TABLET_768() {
-  @media screen and (min-width: $TABLET_768) and (max-width: $DESKTOP_1600 - 1) { @content; }
+@mixin TABLET() {
+  @media screen and (min-width: $TABLET) and (max-width: $DESKTOP - 1) { @content; }
 }
-@mixin DESKTOP_1600() {
-  @media screen and (min-width: $DESKTOP_1600) { @content; }
+@mixin DESKTOP() {
+  @media screen and (min-width: $DESKTOP) { @content; }
 }

@@ -23,10 +23,53 @@ $size-text: (320px * 100%) / ($text-block);
 	//float: left;
 	//width: ($W-CONTENT-PAGE*101%/$W-FULL-PAGE);
 	width: calc(100% - 270px);
+	&:before {
+		height: 0;
+	}
 	//height: 95vh;
 	background-color: $BG-COLOR; 
 	@include vertical-center;
 
+	@include MOBILE(){
+		width: 100%;
+		.page {
+			&__img {
+				width: 100%;
+				background-size: 90%;
+				//height: 50%;
+				top: 0;
+				background-position: -4px 0px;
+				height: 100%;
+				position: absolute;
+				opacity: .6;
+			}
+
+			&__content {
+				width: 90%;
+				margin: 115% auto 20% auto;
+				left: 0;
+			}
+
+			&__title {
+				margin-bottom: 7%;
+			}
+			&__text_left {
+				float: none;
+				display: block;
+				margin: 0;
+				padding: 0;
+				width: 100%;
+			}
+			&__text_right {
+				float: none;
+				display: block;
+				margin-top: 20px;
+				margin-left: 0;
+				width: 100%;
+				padding: 0;
+			}
+		}
+	}
 
 	//
 	&__img {

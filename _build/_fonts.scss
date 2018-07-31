@@ -1,18 +1,17 @@
-
 /**
  * заголовок контента
  */
 .CONTENT-TITLE {
   font-family: $FuturaNewLight-Reg;
   @include MOBILE() {
-    font-size: 36pt;
+    font-size: 36px;
     line-height: 36px;
   }
-  @include TABLET_768() {
-    font-size: 36pt;
-    line-height: 40.5pt;
+  @include TABLET() {
+    font-size: 36px;
+    line-height: 40.5px;
   }
-  @include DESKTOP_1600() {
+  @include DESKTOP() {
     font-size: 38.1pt;
     line-height: 61pt;
   }
@@ -21,16 +20,16 @@
  * текст контента
  */
 .CONTENT-TEXT {
-  font-family: $FuturaNewBook-Reg;
+  font-family: $FuturaNewLight-Reg;
   @include MOBILE() {
-    font-size: 14pt;
-    line-height: 20.25pt;
+    font-size: 14px;
+    line-height: 20.25px;
   }
-  @include TABLET_768() {
-    font-size: 14pt;
-    line-height: 20.25pt;
+  @include TABLET() {
+    font-size: 14px;
+    line-height: 20.25px;
   }
-  @include DESKTOP_1600() {
+  @include DESKTOP() {
     font-size: 14pt;
     line-height: 20.55pt;
   }
@@ -41,14 +40,14 @@
 .NUMBER {
   font-family: $FuturaNewLight-Reg;
   @include MOBILE() {
-    font-size: 24pt;
-    line-height: 20.25pt;
+    font-size: 24px;
+    line-height: 20.25px;
   }
-  @include TABLET_768() {
-    font-size: 24pt;
-    line-height: 20.25pt;
+  @include TABLET() {
+    font-size: 24px;
+    line-height: 20.25px;
   }
-  @include DESKTOP_1600() {
+  @include DESKTOP() {
     font-size: 24pt;
     line-height: 27pt;
   }
@@ -59,32 +58,24 @@
 .MENU-ITEMS {
   font-family: $FuturaNewBook-Reg;
   @include MOBILE() {
-    font-size: 15.75pt;
-    line-height: 18pt;
+    font-size: 15.75px;
+    line-height: 18px;
   }
-  @include TABLET_768() {
-    font-size: 15.75pt;
-    line-height: 18pt;
+  @include TABLET() {
+    font-size: 15.75px;
+    line-height: 18px;
   }
-  @include DESKTOP_1600() {
+  @include DESKTOP() {
     font-size: 16pt;
     line-height: 20pt;
   }
 }
 /**
- * активные элементы меню
+ * активный элемент меню
  */
 .MENU-ACTIVE-ITEM {
   font-family: $FuturaNewDemi-Reg;
-  @include MOBILE() {
-    font-size: 15.75pt;
-    line-height: 18pt;
-  }
-  @include TABLET_768() {
-    font-size: 15.75pt;
-    line-height: 18pt;
-  }
-  @include DESKTOP_1600() {
+  @include DESKTOP() {
     font-size: 16pt;
     line-height: 19pt;
   }
@@ -95,14 +86,14 @@
 .BUTTONS-F {
   font-family: $FuturaNewLight-Reg;
   @include MOBILE() {
-    font-size: 10.5pt;
-    line-height: 13.5pt;
+    font-size: 10.5px;
+    line-height: 13.5px;
   }
-  @include TABLET_768() {
-    font-size: 10.5pt;
-    line-height: 13.5pt;
+  @include TABLET() {
+    font-size: 10.5px;
+    line-height: 13.5px;
   }
-  @include DESKTOP_1600() {
+  @include DESKTOP() {
     font-size: 11.5pt;
     line-height: 18pt;
   }
@@ -113,14 +104,14 @@
 .DOWNLOAD-PDF {
   font-family: $FuturaNewLight-Reg;
   @include MOBILE() {
-    font-size: 10.5pt;
-    line-height: 20.25pt;
+    font-size: 10.5px;
+    line-height: 20.25px;
   }
-  @include TABLET_768() {
-    font-size: 10.5pt;
-    line-height: 20.25pt;
+  @include TABLET() {
+    font-size: 10.5px;
+    line-height: 20.25px;
   }
-  @include DESKTOP_1600() {
+  @include DESKTOP() {
     font-size: 14pt;
     line-height: 27pt;
   }
@@ -131,14 +122,14 @@
 .RU {
   font-family: $FuturaNewBook-Reg;
   @include MOBILE() {
-    font-size: 12pt;
-    line-height: 13.5pt;
+    font-size: 12px;
+    line-height: 13.5px;
   }
-  @include TABLET_768() {
-    font-size: 12pt;
-    line-height: 13.5pt;
+  @include TABLET() {
+    font-size: 12px;
+    line-height: 13.5px;
   }
-  @include DESKTOP_1600() {
+  @include DESKTOP() {
     font-size: 11pt;
     line-height: 18pt;
   }
@@ -149,14 +140,14 @@
 .COPYRIGHT {
   font-family: $FuturaNewLight-Reg;
   @include MOBILE() {
-    font-size: 9pt;
-    line-height: 20.25pt;
+    font-size: 9px;
+    line-height: 20.25px;
   }
-  @include TABLET_768() {
-    font-size: 9pt;
-    line-height: 20.25pt;
+  @include TABLET() {
+    font-size: 9px;
+    line-height: 20.25px;
   }
-  @include DESKTOP_1600() {
+  @include DESKTOP() {
     font-size: 12pt;
     line-height: 27pt;
   }
@@ -166,8 +157,8 @@
  */
 .MENU {
   font-family: $FuturaNewBook-Reg;
-  @include TABLET_768() {
-    font-size: 12pt;
-    line-height: 13.5pt;
+  @include TABLET() {
+    font-size: 12px;
+    line-height: 13.5px;
   }
 }
