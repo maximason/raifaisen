@@ -17,6 +17,7 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 		position: relative;
 		&_opened {
 			display: block;
+			min-height: 450px;
 		}
 		.menu {
 			
@@ -50,7 +51,7 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 			&__item_active {
 				a {
 					//display: block;
-					width: 78%;
+					width: 206px;
 				}
 			}
 
@@ -72,17 +73,29 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 
 		.link {
 			padding-bottom: 0;
-			width: 35%;
+			padding-top: 20px;
+			width: 25%;
 			position: absolute;
 			left:0;
-			//float: left;
+			margin-left: 40px;
+			line-height: normal;
+			font-size: 80%;
+		}
+
+		.link_pdf {
+			margin-left: -40px;
+			top:25px;
+			width: 30px;
+			height: 24px;
 		}
 
 		.copyright {
-			//float: right;
+
 			width: 35%;
 			position: absolute;
+			top:15px;
 			right: 0;
+			font-size: 70%;
 		}
 	}
 

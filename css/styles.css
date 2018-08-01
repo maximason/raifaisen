@@ -305,7 +305,8 @@ div {
       width: 100%;
       position: relative; }
       .menu_opened {
-        display: block; }
+        display: block;
+        min-height: 450px; }
       .menu .menu__top {
         background-color: inherit;
         width: 100%;
@@ -325,7 +326,7 @@ div {
         .menu .menu__item:nth-child(7) {
           margin-top: -20px; }
       .menu .menu__item_active a {
-        width: 78%; }
+        width: 206px; }
       .menu .menu__item_delimeter {
         position: relative;
         top: -10px; }
@@ -339,13 +340,24 @@ div {
         height: 0; }
       .menu .link {
         padding-bottom: 0;
-        width: 35%;
+        padding-top: 20px;
+        width: 25%;
         position: absolute;
-        left: 0; }
+        left: 0;
+        margin-left: 40px;
+        line-height: normal;
+        font-size: 80%; }
+      .menu .link_pdf {
+        margin-left: -40px;
+        top: 25px;
+        width: 30px;
+        height: 24px; }
       .menu .copyright {
         width: 35%;
         position: absolute;
-        right: 0; } }
+        top: 15px;
+        right: 0;
+        font-size: 70%; } }
   .menu__top {
     background-color: #f2f1f1;
     position: relative;
