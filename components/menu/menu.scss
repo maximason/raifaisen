@@ -10,8 +10,9 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 	width: $wmenu +55px;
 	top: 0;
 	right: 0;
-	display: none;
+	//display: none;
 	@include MOBILE() {
+		display: none;
 		width: 100%;
 		position: relative;
 		&_opened {
@@ -72,12 +73,16 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 		.link {
 			padding-bottom: 0;
 			width: 35%;
-			float: left;
+			position: absolute;
+			left:0;
+			//float: left;
 		}
 
 		.copyright {
-			float: right;
+			//float: right;
 			width: 35%;
+			position: absolute;
+			right: 0;
 		}
 	}
 
