@@ -7,11 +7,27 @@
 	margin: 0 45px;
 	top: 700px;
 	padding-bottom: 20px;
+	@include MOBILE() {
+		width: 90%;
+		margin: 0 auto;
+		padding: 0;
+		padding-top: 20px;
+
+		.button-online {
+			font-size: 150%;
+			padding: 11px 10%;
+		}
+
+		.button-dealer {
+			font-size: 150%;
+			padding: 10px 10%;
+		}
+	}
 	//height: 100px;
 	//top:4vh;
 }
 
-.button_online {
+.button-online {
 	text-decoration: none;
 	color: #fff;
 	background-color: #b3aaaf;
@@ -25,7 +41,7 @@
 }
 
 
-.button_dealer {
+.button-dealer {
 	border: 1px solid #b3aaaf;
 	text-decoration: none;
 	color: #000;
