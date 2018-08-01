@@ -10,11 +10,17 @@ $wmenu: $W-FULL-PAGE - $W-CONTENT-PAGE - 70px;
 	width: $wmenu +55px;
 	top: 0;
 	right: 0;
+	display: none;
 	@include MOBILE() {
 		width: 100%;
 		position: relative;
+		&_opened {
+			display: block;
+		}
 		.menu {
 			
+			
+
 			&__top {
 				background-color: inherit;
 				width: 100%;

@@ -1,5 +1,6 @@
 include components/menu/menu
 include components/header/header
+include components/hamburger/hamburger
 
 
 html
@@ -8,6 +9,7 @@ html
     link(rel='stylesheet', href='css/styles.css')
   body
     .full-content
+
       .page
         //+header
 
@@ -24,5 +26,6 @@ html
         +header
 
       +menu( "save" )
-  
+      +hamburger
+  script(src="scripts/burger-x.js")
 

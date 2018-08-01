@@ -32,8 +32,15 @@ $size-text: (320px * 100%) / ($text-block);
 
 	@include MOBILE(){
 		width: 100%;
-		display: none;
+		//display: none;
+		&_close {
+			display: none;
+			//font-size: 500%;
+		}
+
 		.page {
+			
+			 
 			&__img {
 				width: 100%;
 				background-size: 90%;
@@ -71,6 +78,7 @@ $size-text: (320px * 100%) / ($text-block);
 			}
 		}
 	}
+
 
 	//
 	&__img {
